@@ -1,0 +1,361 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: white;
+    /*background-color: rgba(black, );*/
+    background: linear-gradient( white,#f7b617);
+    width: 100%;
+    height: 65px;
+    padding: 20px;
+    position: fixed;
+    z-index: 1;
+        
+}
+
+.logo-container {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.right-part {
+    display: flex;
+    margin-top: -70px;
+    justify-content: flex-end;
+    margin-right: 40px;
+}
+
+ul li {
+    display: inline-block;
+    padding: 20px;
+}
+
+
+/*Quitando los estilos <a>*/
+
+ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    width: 120px;
+    height: 43px;
+    margin-top: 10px;
+}
+
+.logo-while {
+    width: 80px;
+    height: 27px;
+    margin-top: 10px;
+}
+
+
+ul li a:hover {
+    color: black;
+}
+
+
+/*Estilos para el boton de login*/
+
+.button-nav {
+    padding: 9px 18px;
+    border-radius: 10%;
+    width: 61px;
+    height: 18px;
+    text-align: center;
+    display: inline-block;
+}
+
+
+/*imagen del home*/
+
+.fondo-container {
+    overflow: hidden;
+}
+
+img#fondo.fondo{
+     max-width: 1000px;
+    height: 650px;
+}
+
+.fondo-container fondo {
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+    width: 100%;
+    background: linear-gradient(#76278f, #2B1E66);
+    margin-top: -30px;
+}
+
+
+/* Estilos para el cambio de navbar y el nuevo boton */
+
+.navbar-color {
+    width: 100%;
+    height: 78px;
+    background: white;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar-color .right-part ul li a {
+    color: #333447;
+}
+
+.navbar-color .right-part .button-nav {
+    padding: 9px 18px;
+    border-radius: 10%;
+    width: 61px;
+    height: 18px;
+    border: 2px solid black;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.second-apar {
+    visibility: hidden;
+}
+
+
+/* caja registro */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    overflow: auto;
+    background-color: #f7b617;
+    width: 436px;
+    height: 320px;
+    top: 200px;
+    right: 0;
+    color: white;
+    padding: 30px;
+}
+
+.extended-card {
+    flex-direction: column;
+    position: absolute;
+    overflow: auto;
+    background-color: #f7b617;
+    width: 436px;
+    height: 500px;
+    top: 200px;
+    right: 0;
+    color: white;
+    padding: 30px;
+}
+
+h2,
+h5,
+input {
+    margin-left: 20px;
+}
+
+.title-card {
+    margin-top: -20px;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #728099;
+    margin-left: 20px;
+    background-color: #EDE9E2;
+}
+
+.btn-become {
+    margin-left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    font-size: 14px;
+    padding: 10px 10px 10px 10px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.link {
+    margin-left: 5px;
+    color: #728099;
+    font-size: 13px;
+}
+
+.text-card {
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.text-card p {
+    margin-bottom: -5px;
+}
+
+
+/* descarga app*/
+
+.info-1 {
+    display: flex;
+    background: linear-gradient(#f7b617, #2B1E66);
+    margin: 0;
+    color: white;
+}
+
+.container-test {
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.img-phone {
+    margin-right: 100px;
+}
+
+.text-info-1 {
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.title-section-test {
+    font-size: 25px;
+}
+
+
+/* conduce como quieras */
+
+
+/* Flex box en común para todos */
+
+.container-video {
+    display: flex;
+}
+
+.video-uno {
+    height: 500px;
+    width: 900px;
+}
+
+.left {
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+.left p {
+    font-size: 10px;
+    margin-bottom: -15px;
+}
+
+.left h1 {
+    font-size: 30px;
+}
+
+.left span {
+    font-size: 16px;
+}
+
+
+/* Estilos para mapa y tarifa */
+
+
+
+
+/* footer */
+
+.footer-ini {
+    display: flex;
+    background-color: #2b2b2b;
+    color: white
+}
+
+.footer-ini div {
+    margin-left: 100px;
+    margin-right: 30px;
+}
+
+.app-store svg,
+.app-store img {
+    cursor: pointer;
+}
+
+.app-store {
+    margin-top: 50px;
+}
+
+.app-store svg {
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.app-store img {
+    width: 135px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.links:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.links {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.line {
+    border: 1px solid white;
+    width: 50%;
+    position: absolute;
+    margin-top: 70px;
+}
+
+.icon {
+    margin-right: 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.social-wrapper {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 2px solid white;
+    text-align: center;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #2b2b2b;
+    color: white;
+}
+
+input[type=text].invalid-input {
+    background-position-x: 350px;
+    border-bottom: 2px solid red;
+}
+
+.ocultar-input {
+    display: none;
+}
