@@ -1,3 +1,12 @@
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
 * {
     font-family: 'Montserrat', sans-serif;
 }
@@ -17,7 +26,7 @@ body {
     padding: 20px;
     position: fixed;
     z-index: 1;
-        
+
 }
 
 .logo-container {
@@ -49,8 +58,8 @@ ul li a {
 }
 
 .logo {
-    width: 120px;
-    height: 43px;
+    width: 137px;
+    height: 29px;
     margin-top: 10px;
 }
 
@@ -210,6 +219,9 @@ input[type=text] {
     background: linear-gradient(#f7b617, #2B1E66);
     margin: 0;
     color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
 }
 
 .container-test {
@@ -217,52 +229,54 @@ input[type=text] {
     margin-left: 150px;
 }
 
-.img-phone {
+/*.img-phone {
     margin-right: 100px;
 }
-
-.text-info-1 {
+*/
+.info-1 p {
     font-size: 14px;
-    margin-bottom: 50px;
 }
 
-.title-section-test {
-    font-size: 25px;
+.border{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
 }
-
 
 /* conduce como quieras */
 
-
-/* Flex box en común para todos */
-
-.container-video {
-    display: flex;
+.drive{
+    background-image: url("../img/conduce.jpg");
+    width: 100%;
+    height: 95vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
 }
-
-.video-uno {
-    height: 500px;
-    width: 900px;
+.gray-box{
+    margin-left: 31%;
+    margin-bottom: 35%;
+    width: 52%;
+    box-sizing: border-box;
+    padding: 0px 59px 43% 10px;
+    color: white;
+    background-color: black;
+    opacity: 0.5;
+    margin: 0 auto;
+    display: block;
+    
 }
-
-.left {
-    margin-left: 40px;
-    margin-right: 30px;
+.cont-save button{
+    background-color: #f7b617;
+    border-radius: 3px;
+    color: white;
+    padding-bottom: 9px;
+    padding-top: 8px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
 }
-
-.left p {
-    font-size: 10px;
-    margin-bottom: -15px;
-}
-
-.left h1 {
-    font-size: 30px;
-}
-
-.left span {
-    font-size: 16px;
-}
-
 
 /* Estilos para mapa y tarifa */
 
