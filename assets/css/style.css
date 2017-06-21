@@ -71,7 +71,7 @@ ul li a:hover {
 .button-nav {
     padding: 9px 18px;
     border-radius: 10%;
-    width: 61px;
+    /*width: 61px;*/
     height: 18px;
     text-align: center;
     display: inline-block;
@@ -84,18 +84,13 @@ ul li a:hover {
     overflow: hidden;
 }
 
-img#fondo.fondo{
-     max-width: 1000px;
-    height: 650px;
-}
-
-.fondo-container fondo {
-    max-width: 100%;
-    position: relative;
-    top: 30px;
+.fondo-home{
+    background-image: url("../img/taxi.jpg");
     width: 100%;
-    background: linear-gradient(#76278f, #2B1E66);
-    margin-top: -30px;
+    height: 113vh;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 
@@ -120,7 +115,6 @@ img#fondo.fondo{
     border-radius: 10%;
     width: 61px;
     height: 18px;
-    border: 2px solid black;
     text-align: center;
     display: inline-block;
     cursor: pointer;
