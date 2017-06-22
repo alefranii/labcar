@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px) {
+	.navbar {
+		display: flex;
+		align-items: center;
+		padding: 0;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 767px) {
+	.navbar{
+		padding: 10% 0;
+	}
+	.navbar-toggle {
+		margin: 0 5em 0 1em;
+		border: none;
+		background: transparent;
+		float: left;
+	}
+	.navbar .navbar-collapse {
+		background-color: #fff;
+		margin: 10% 0;
+		width: 101%;
+		position: absolute;
+		left: -1px;
+	}
+	.navbar .navbar-nav>li>a {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	#app .box {
+		max-width: 95%;
+		margin: 0 auto;
+		float: none;
+		padding: 2em 0;
+	}
+	#app h3 {
+		margin: 2.5em 0 0;
+	}
+	footer .flex {
+		flex-direction: column;
+		height: 260px;
+		justify-content: flex-start;
+	}
+	footer .flex > * {
+		margin-bottom: 1em;
+	}
+}
