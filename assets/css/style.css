@@ -12,20 +12,19 @@
 }
 
 body {
-    padding: 0;
-    margin: 0 auto;
     overflow-x: hidden;
 }
 
 .navbar {
     background-color: white;
     /*background-color: rgba(black, );*/
-    background: linear-gradient( white,#f7b617);
+    background: linear-gradient( #f7b617, white);
     width: 100%;
     height: 65px;
-    padding: 20px;
+    padding: 43px;
     position: fixed;
     z-index: 1;
+
 
 }
 
@@ -36,9 +35,9 @@ body {
 
 .right-part {
     display: flex;
-    margin-top: -70px;
+    margin-top: -65px;
     justify-content: flex-end;
-    margin-right: 40px;
+    margin-right: 57px;
 }
 
 ul li {
@@ -51,7 +50,7 @@ ul li {
 
 ul li a {
     display: inline-block;
-    color: white;
+    color: black;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
@@ -105,7 +104,7 @@ ul li a:hover {
 
 /* Estilos para el cambio de navbar y el nuevo boton */
 
-.navbar-color {
+/*.navbar-color {
     width: 100%;
     height: 78px;
     background: white;
@@ -118,7 +117,7 @@ ul li a:hover {
 .navbar-color .right-part ul li a {
     color: #333447;
 }
-
+*/
 .navbar-color .right-part .button-nav {
     padding: 9px 18px;
     border-radius: 10%;
@@ -136,14 +135,14 @@ ul li a:hover {
 
 /* caja registro */
 
-.container {
+.ride {
     display: flex;
     flex-direction: column;
     position: absolute;
     overflow: auto;
     background-color: #f7b617;
-    width: 436px;
-    height: 320px;
+    width: 473px;
+    height: 360px;
     top: 200px;
     right: 0;
     color: white;
@@ -156,7 +155,7 @@ ul li a:hover {
     overflow: auto;
     background-color: #f7b617;
     width: 436px;
-    height: 500px;
+    height: 564px;
     top: 200px;
     right: 0;
     color: white;
@@ -182,6 +181,7 @@ input[type=text] {
     border-bottom: 2px solid #728099;
     margin-left: 20px;
     background-color: #EDE9E2;
+    color: black;
 }
 
 .btn-become {
@@ -211,8 +211,11 @@ input[type=text] {
     margin-bottom: -5px;
 }
 
+.title-card small{
+    text-align: center;
+}
 
-/* descarga app*/
+/* seccion descarga app*/
 
 .info-1 {
     display: flex;
@@ -255,17 +258,18 @@ input[type=text] {
     
 }
 .gray-box{
+
     margin-left: 31%;
     margin-bottom: 35%;
-    width: 52%;
+    width: 89%;
     box-sizing: border-box;
-    padding: 0px 59px 43% 10px;
+    padding: 56px 54px 48% 59px;
     color: white;
     background-color: black;
     opacity: 0.5;
     margin: 0 auto;
     display: block;
-    
+
 }
 .cont-save button{
     background-color: #f7b617;
@@ -278,9 +282,22 @@ input[type=text] {
     padding-right: 20px;
 }
 
+.cont-save {
+    margin-bottom: 10px;
+    color: white;
+    
+}
 /* Estilos para mapa y tarifa */
 
+.mapa {
+    display: flex;
+    background-color: #f7b617;
+    margin: 0;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 30px;
 
+}
 
 
 /* footer */

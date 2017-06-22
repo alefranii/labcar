@@ -1,27 +1,3 @@
-
-
-/***************** navbar scroll***********************/
-
-function cambioDeNavbar() {
-    var distanciaY = window.pageYOffset || document.documentElement.scrollTop;
-    var navbar = document.getElementById('navbar');
-    var logo = document.getElementById('logo');
-    var botonSignUp = document.getElementById('btn-sign-up');
-
-    if (distanciaY > 100) {
-        navbar.classList.add('navbar-color');
-        logo.setAttribute('src', 'assets/img/logo.png');
-        /*botonSignUp.style.visibility = 'visible';*/
-
-    } else {
-        navbar.classList.remove('navbar-color');
-        logo.setAttribute('src', 'assets/img/logo.png');
-        botonSignUp.style.visibility = 'hidden';
-    }
-}
-window.addEventListener('scroll', cambioDeNavbar);
-
-
 /***************** expandir modal ***********************/
 var presPhoneNumber = document.getElementById('phone-number');
 presPhoneNumber.addEventListener('click', desplegarFormulario);
@@ -142,3 +118,26 @@ function validaciones() {
         ocultarFormulario();
     }
 }
+
+
+
+/***************** navbar scroll***********************/
+
+/*function cambioDeNavbar() {
+    var distanciaY = window.pageYOffset || document.documentElement.scrollTop;
+    var navbar = document.getElementById('navbar');
+    var logo = document.getElementById('logo');
+    var botonSignUp = document.getElementById('btn-sign-up');
+
+    if (distanciaY > 100) {
+        navbar.classList.add('navbar-color');
+        logo.setAttribute('src', 'assets/img/logo.png');
+        /*botonSignUp.style.visibility = 'visible';*/
+
+    /*} else {
+        navbar.classList.remove('navbar-color');
+        logo.setAttribute('src', 'assets/img/logo.png');
+       botonSignUp.style.visibility = 'hidden';
+    }
+}
+window.addEventListener('scroll', cambioDeNavbar);*/
