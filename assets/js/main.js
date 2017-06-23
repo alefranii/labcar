@@ -3,6 +3,7 @@ var presPhoneNumber = document.getElementById('phone-number');
 presPhoneNumber.addEventListener('click', desplegarFormulario);
 
 function desplegarFormulario() {
+    // Evento click para el input phone number
     var phoneNumber = document.getElementById('phone-number');
     var name = document.getElementById('name');
     var email = document.getElementById('email');
@@ -25,30 +26,31 @@ function ocultarFormulario() {
     email.classList.add('ocultar-input');
     city.classList.add('ocultar-input');
 }
-
 /****************************** Validaciones codigo reutilizado ***********************************/
 
+// Función para validar que el telefono sean solo numeros y que minimo tengan 9 caracteres
 function validarTelefono(value) {
     return !(isNaN(parseInt(value)));
 }
-
+// Función para que la primera letra sea mayuscula
 function primeraMayus(value) {
     if (value[0] === value[0].toUpperCase()) {
         return true;
     }
 }
 
+// Función para validar el email
 function validarCorreo(email) {
     var expRegCorreo = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (!expRegCorreo.test(email)) {
         return true;
     }
 }
-
+// Función que acepte solo letras
 function soloLetras(value) {
     return (isNaN(parseInt(value)));
 }
-
+// Función para limpiar el formulario
 function limpiarForm() {
     var phoneNumber = document.getElementById('phone-number').value = '';
     var name = document.getElementById('name').value = '';
@@ -65,6 +67,9 @@ function validaciones() {
     var email = document.getElementById('email');
     var city = document.getElementById('city');
     var container = document.getElementById('container');
+
+
+    // si es igual a -1 no tiene la class extenden card
     if (Array.from(container.classList).indexOf('extended-card') === -1) {
         desplegarFormulario();
         return null;
@@ -82,6 +87,8 @@ function validaciones() {
     if (city.value === '') {
         city.classList.add('invalid-input')
     }
+
+    // Si el telefono no tiene el formato valido le agrego la clase invalid-input, si no se la quito
     if (!validarTelefono(phoneNumber.value)) {
         phoneNumber.classList.add('invalid-input');
     } else {
